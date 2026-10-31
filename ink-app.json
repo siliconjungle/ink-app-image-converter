@@ -1,0 +1,44 @@
+{
+  "slug": "image-converter",
+  "title": "Image Converter",
+  "repository": "https://github.com/siliconjungle/ink-app-image-converter",
+  "directory": "web",
+  "entry": "index.html",
+  "desktop": {
+    "entry": "image-converter",
+    "context": "self",
+    "icon": "web/icon.svg",
+    "window": {
+      "width": 1180,
+      "height": 780
+    },
+    "dropTypes": [
+      "image/png",
+      "image/jpeg",
+      "image/webp",
+      "image/avif",
+      "image/gif",
+      "image/bmp",
+      ".png",
+      ".jpg",
+      ".jpeg",
+      ".webp",
+      ".avif",
+      ".gif",
+      ".bmp"
+    ],
+    "fileTypes": [
+      "image/png",
+      "image/jpeg",
+      "image/webp",
+      "image/avif",
+      "image/gif",
+      "image/bmp"
+    ]
+  },
+  "capabilities": [
+    "world.read",
+    "world.write",
+    "desktop.open"
+  ]
+}

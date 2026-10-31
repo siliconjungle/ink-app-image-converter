@@ -1,0 +1,3 @@
+import test from'node:test';import assert from'node:assert/strict';import{options,dimensions,outputName}from'../web/model.mjs';
+test('aspect fitting does not upscale or exceed the pixel budget',()=>{assert.deepEqual(dimensions(4000,2000,1024),{width:1024,height:512});assert.deepEqual(dimensions(20,30,512),{width:20,height:30});assert.throws(()=>dimensions(6000,6000,512),/16 million/);});
+test('reject unsupported encoding and unsafe settings',()=>{assert.throws(()=>options({format:'svg'}),/Choose/);assert.throws(()=>options({format:'png',quality:NaN,edge:0,matte:'#ffffff'}),/Quality/);assert.equal(outputName('../a.b.png','jpg'),'a.b-converted.jpg');});
