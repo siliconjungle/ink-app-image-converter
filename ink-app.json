@@ -34,7 +34,17 @@
       "image/avif",
       "image/gif",
       "image/bmp"
-    ]
+    ],
+    "preview": {
+      "fileTypes": [
+        "image/png",
+        "image/jpeg",
+        "image/webp",
+        "image/avif",
+        "image/gif",
+        "image/bmp"
+      ]
+    }
   },
   "capabilities": [
     "world.read",
